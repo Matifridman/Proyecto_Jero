@@ -8,6 +8,8 @@ TagManager:
   - JumpPad
   - Enemy
   - Players
+  - Fire
+  - Teleport
   layers:
   - Default
   - TransparentFX
