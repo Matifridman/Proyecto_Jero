@@ -4,33 +4,28 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    /*public GameObject Player;
-    public string teleport;
-    private Vector3 Spawnpoint¨*/
-
     public Transform teleportTarget;
     public GameObject thePlayer;
-    void OnTriggerEnter( Collider other)
+    public GameObject Protecotr;
+
+
+    public int keys;
+
+    void Update()
+    {
+        keys = data.keys;
+        if (data.keys >= 4)
+        {
+            Destroy(Protecotr);
+        }
+    }
+    public void OnTriggerEnter(Collider other)
     {
         thePlayer.transform.position = teleportTarget.transform.position;
     }
     
-    void Start()
-    {
-        //Spawnpoint = new Vector3(1.3f, 20f, 59.8f);
-    }
 
-    
-    void Update()
-    {
 
-    }
-    /*void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "Teleport")
-        {
-            //Instantiate(Player, Spawnpoint, Quaternion.identity);
-            Player.transform.position += Spawnpoint;
-        }
-    }*/
 }
+    
+  
