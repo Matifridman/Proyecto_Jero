@@ -21,11 +21,8 @@ public class Teleport : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        thePlayer.transform.position = teleportTarget.transform.position;
+        thePlayer.transform.position = teleportTarget.transform.position + new Vector3(0, 2.5f, 0);
     }
-    
-
-
 }
     
   

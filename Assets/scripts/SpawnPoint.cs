@@ -18,7 +18,8 @@ public class SpawnPoint : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision col)
+
+    private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == Death_point)
         {

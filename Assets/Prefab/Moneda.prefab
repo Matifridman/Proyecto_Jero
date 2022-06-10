@@ -193,8 +193,8 @@ GameObject:
   - component: {fileID: 3156588089362569447}
   - component: {fileID: 2835362293491215999}
   - component: {fileID: 1271013648829613726}
-  - component: {fileID: 2146515952974616178}
   - component: {fileID: 114433282791526776}
+  - component: {fileID: 65443882656543914}
   m_Layer: 0
   m_Name: Moneda
   m_TagString: Untagged
@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6794859476714111948}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -18.8, y: 8.8, z: 40.2}
+  m_LocalPosition: {x: -18.25, y: 8.8, z: 40.2}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 7470808839627138634}
@@ -267,20 +267,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &2146515952974616178
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6794859476714111948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &114433282791526776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +279,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a112dadc392e64fad98f3c838acb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &65443882656543914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794859476714111948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 2}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
 --- !u!1 &7365144444148329620
 GameObject:
   m_ObjectHideFlags: 0
