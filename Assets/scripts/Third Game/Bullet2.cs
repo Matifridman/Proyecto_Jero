@@ -11,27 +11,41 @@ public class Bullet2 : MonoBehaviour
     public GameObject bullet;
     public Transform bulletSpawn = null;
     public GameObject thePlayer;
- 
+    bool can_shhot = false;
+
+    public float reloadTime;
+    float currReloadTime;
+
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Destroy(gameObject, lifeTime);
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        transform.position += transform.forward * speed;
 
-       /* while (thePlayer==true) 
+
+        while (can_shhot ==true)
         {
             Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
-            
-        }*/
-    }
+            bullet.transform.position += bullet.transform.forward * speed;
+            currReloadTime = reloadTime;
 
+            Destroy(gameObject, lifeTime);
+        }
+
+
+    }
+    void canShoot()
+    {
+        if (currReloadTime<0)
+        {
+            can_shhot = false;
+        }
+
+        if (currReloadTime >= 0)
+        {
+            can_shhot = true;
+            currReloadTime -= Time.deltaTime;
+        }
+    }
     void OnCollisionEnter()
     {
         Destroy(gameObject);
