@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    public GameObject Player;
+    
     public string Death_point;
     private Vector3 Spawnpoint;
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class SpawnPoint : MonoBehaviour
     {
         if (col.gameObject.tag == Death_point)
         {
-            Instantiate(Player, Spawnpoint, Quaternion.identity);
+            Instantiate(gameObject, Spawnpoint, Quaternion.identity);
             Destroy(gameObject);
         }
     }

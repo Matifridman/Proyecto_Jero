@@ -12,6 +12,14 @@ TagManager:
   - Teleport
   - Destroy1
   - m_platform
+  - CheckPoint
+  - Teleport2
+  - CheckPoint3
+  - end
+  - piso1
+  - End2
+  - piso2
+  - Back
   layers:
   - Default
   - TransparentFX
