@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Pausa_meu : MonoBehaviour
+public class Pausa_menu_2 : MonoBehaviour
 {
-    
+
     public GameObject botonPausa;
     public GameObject menuPausado;
     private bool juegoPausado = false;
@@ -30,7 +30,7 @@ public class Pausa_meu : MonoBehaviour
         Time.timeScale = 0f;
         botonPausa.SetActive(false);
         menuPausado.SetActive(true);
-        
+
     }
     public void Reanudar()
     {
@@ -47,7 +47,7 @@ public class Pausa_meu : MonoBehaviour
     }
     public void Home()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
 
