@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      gameObject.GetComponent<Text>().text = Time.time.ToString();
+      gameObject.GetComponent<Text>().text = Time.time.ToString("0.00");
+        
     }
 }
