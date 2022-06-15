@@ -16,7 +16,7 @@ public class Teletransporte1 : MonoBehaviour
     void Update()
     {
         keys = data.keys;
-        if (data.keys >= 4)
+        if (data.keys >=4)
         {
             Destroy(Protecotr);
         }
