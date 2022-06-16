@@ -10,17 +10,9 @@ public class Back_to_menu : MonoBehaviour
     public GameObject text2;
     float stop_timer;
     private void OnTriggerEnter(Collider col)
-    
-    {
-        if (col.gameObject.tag == "end")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
-            stop_timer = Time.time;
-            text2.GetComponent<Text>().text = stop_timer.ToString("0.00");
-            stop_timer = Scores.score;
-            
-        }
+    {
+
 
         if (col.gameObject.tag == "Back")
         {
@@ -29,6 +21,9 @@ public class Back_to_menu : MonoBehaviour
 
 
     }
+
+
+
     void Update()
     {
         text.GetComponent<Text>().text = Time.time.ToString("0.00");
@@ -37,6 +32,13 @@ public class Back_to_menu : MonoBehaviour
     public void back_menu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
+    public void back()
+    {
+        
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+
     }
 }
 

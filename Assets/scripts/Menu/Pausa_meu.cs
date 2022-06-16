@@ -30,7 +30,10 @@ public class Pausa_meu : MonoBehaviour
         Time.timeScale = 0f;
         botonPausa.SetActive(false);
         menuPausado.SetActive(true);
-        
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
     }
     public void Reanudar()
     {
