@@ -714,6 +714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   text2: {fileID: 0}
+  Confeti: {fileID: 0}
 --- !u!1001 &244228825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1331,7 +1332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 156, y: 78}
+  m_AnchoredPosition: {x: 220, y: 78}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &537169088
@@ -2259,7 +2260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -104, y: 85}
+  m_AnchoredPosition: {x: -198.2, y: 85}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895656359
@@ -6353,8 +6354,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5f15711f2ca4341a541cf27b5059e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 895656357}
   text2: {fileID: 0}
+  Confeti: {fileID: 7344064217041841664, guid: fb4a32b8bee23854b8bf500725bfd42e, type: 3}
 --- !u!1 &2035305553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5994934145387426419, guid: 30c7a4eb0a7a2f54fb6a42ef01b45630,
